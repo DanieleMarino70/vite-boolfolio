@@ -28,7 +28,7 @@ export default {
             const milliseconds = parseInt(DateParse);
             const date = new Date(milliseconds)
             //console.log(typeof parseInt(date.toLocaleString('en-GB')));
-            return date.toUTCString();   // 👉️ "20/01/2022 09:50:15"
+            return date.toLocaleString('en-GB');   // 👉️ "20/01/2022 09:50:15"
         }
     },
 };
