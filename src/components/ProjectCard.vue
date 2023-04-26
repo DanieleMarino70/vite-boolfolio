@@ -42,7 +42,7 @@ export default {
             <h6 class="card-subtitle mb-2 text-body-secondary">{{ project.author }}</h6>
             <p class="card-text">{{ getAbstract }}</p>
             <h6 class="card-subtitle mb-2 text-body-secondary">Modificato il: <br>{{  getTimeUpdated }}</h6>
-            
+            <router-link class="btn btn-primary" :to="{name: 'project-detail', params: {id: project.id}}">Vedi</router-link>
         </div>
     </div>
 </div>
